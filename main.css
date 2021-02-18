@@ -1,0 +1,21 @@
+/*@FONT-FACE OID TOEPASSEN*/
+
+body {
+    font-family: "D-DIN";
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+
+#snelheidsbalk {
+    position: relative;
+    background-color: white;
+    margin: 30px;
+    overflow: hidden;
+}
+
+#balk {
+    background-color: red;
+    width: 300px;
+    height: 20px;
+}
