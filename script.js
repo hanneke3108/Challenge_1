@@ -21,7 +21,7 @@ document.getElementById('tank').onclick = function(){
 
 var chart1 = document.getElementById("lineChart");
 
-Chart.defaults.global.defaultFontColor = '#666';
+Chart.defaults.global.defaultFontColor = 'black';
 Chart.defaults.global.defaultFontFamily = 'D-DIN';
 
 var lineChart = new Chart(chart1, {

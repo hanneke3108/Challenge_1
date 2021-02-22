@@ -2,19 +2,31 @@
 
 body {
     font-family: "D-DIN";
-    font-weight: bold;
     background-color: black;
-    color: white;
+    color: black;
+}
+
+header {
+    height: 100px;
 }
 
 main {
     display: grid;
-    grid-template-columns: 2fr;
+    grid-template-columns: 1fr;
     grid-template-areas: 
-/*
-        "actie"
-        "over"; 
-*/
+        "one"
+        "two"
+        "three"; 
+}
+
+h1, span {
+    font-weight: bold;
+    color: white;
+}
+
+.two {
+    width: 200px;
+    height: 200px;
 }
 
 #brandstofbalk {
@@ -29,3 +41,45 @@ main {
     width: 300px;
     height: 20px;
 }
+
+#tank {
+    font-family: "D-DIN";
+    float: right;
+    margin-right: 30px;
+    color: rgba(63, 215, 215, 1);
+    background-color: #4c4c4c;
+    border: 2px solid rgba(63, 215, 215, 1);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.bg_one, .bg_two {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "one two"
+            "three"; 
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "one two"
+            "three"; 
+    }
+}
+

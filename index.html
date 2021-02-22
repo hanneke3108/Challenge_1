@@ -29,15 +29,21 @@
         </nav>
 -->
         <main>
-            <article class="item one">
-                <div>De brandstof is op dit moment <span id="fuel">leeg</span>.</div>
-                <div id="brandstofbalk">
-                    <div id="balk"></div>
-                </div>
-                <input type="button" name="tank" id="tank" value="gas op die lolly">
-            </article>
-            <canvas id="lineChart" width="200" height="100"></canvas>
-            <canvas id="circleChart"></canvas>
+            <div class="bg_one">
+                <article class="item one">
+                    <div>De brandstof is op dit moment <span id="fuel">leeg</span>.</div>
+                    <div id="brandstofbalk">
+                        <div id="balk"></div>
+                    </div>
+                    <input type="button" name="tank" id="tank" value="Verhoog snelheid">
+                </article>
+            </div>
+            <div class="bg_two">
+                <canvas id="lineChart" class="item two"></canvas>
+            </div>
+            <div class="bg_three">
+                <canvas id="circleChart" class="item three"></canvas>
+            </div>
         </main>
     </body>
 </html>
