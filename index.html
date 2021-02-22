@@ -6,6 +6,7 @@
         <title>SpaceX Dashboard</title>
         <link href="main.css" type="text/css" rel="stylesheet" />
         <script src="script.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     </head>
     <body>
         <header>
@@ -29,40 +30,14 @@
 -->
         <main>
             <article class="item one">
-                <div>Uw snelheid is <span id="speed">nog niet ingevuld</span>.</div>
-                <div id="snelheidsbalk">
+                <div>De brandstof is <span id="fuel">leeg</span>.</div>
+                <div id="brandstofbalk">
                     <div id="balk"></div>
                 </div>
-                <input type="button" name="gas" id="gas" value="gas op die lolly">
-<!--
-                <h1>Actie</h1>
-                <p>Nu 1kg broccoli &euro;2,-</p>
-                <picture class="broccoli">
-                    <source media="(max-width: 599px)" srcset="images/mobile/broccoli.png" alt="broccoli">
-                    <source media="(min-width: 600px) and (max-width: 899px)" srcset="images/tablet/broccoli.png" alt="broccoli">
-                    <source media="(min-width: 900px) and (max-width: 1199px)" srcset="images/laptop/broccoli.png" alt="broccoli">
-                    <source media="(max-width: 1200px)" srcset="images/desktop/broccoli.png" alt="broccoli">
-                    <img src="images/desktop/broccoli.png" alt="broccoli">
-                </picture>
-                <button>aanbiedingen</button><p class="icon-right-dir"></p>
--->
+                <input type="button" name="tank" id="tank" value="gas op die lolly">
             </article>
-            <article class="item two">
-<!--
-                <h1>Over ons</h1>
-                <p>Drift is al 75 jaar een begrip in Laakkwartier. In 1935 opgericht door mijn opa en gevolgd door mijn vader. In 1994 heb ik het bedrijf overgenomen.</p>
-                <button>maak kennis</button><p class="icon-right-dir"></p>
--->
-            </article>
-            <article class="item three">
-                
-            </article>
-            <article class="item four">
-                
-            </article>
-            <article class="item five">
-                
-            </article>
+            <canvas id="jsChart"></canvas>
+            <canvas id="jsChart2"></canvas>
         </main>
     </body>
 </html>
