@@ -89,6 +89,51 @@ h2 {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
+.doughnut {
+    width: 300px;
+    height: 150px;
+    position: relative;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    --percentage: 0;
+}
+
+.doughnut:after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 300px;
+    border: 50px solid;
+    border-color: #3FD7D7 #3FD7D7 #000 #000;
+    border-radius: 50%;
+    transform: rotate(-45deg)
+}
+
+/*
+@keyframes fillAnimation {
+    0% {transform:rotate(-45deg)}
+    50% {transform:rotate(135deg)}
+}
+*/
+
+    
+/*
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+*/
+
+
 @media only screen and (min-width: 600px) and (max-width: 899px) {
     main {
         display: grid;
