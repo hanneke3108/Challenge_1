@@ -1,18 +1,18 @@
 // Chart 1: own barChart
 
-var s = 75;
+var fuel = 75;
 
-document.getElementById('fuel').innerHTML = s;
-document.getElementById('balk').style.width = s+'%';
+document.getElementById('fuel').innerHTML = fuel;
+document.getElementById('balk').style.width = fuel+'%';
 
 document.getElementById('tank').onclick = function(){
-    s += 3;
+    fuel += 3;
 
-    if(s > 100){
-        s = 100;
+    if(fuel > 100){
+        fuel = 100;
     }
-    document.getElementById('fuel').innerHTML = s;
-    document.getElementById('balk').style.width = s+'%';
+    document.getElementById('fuel').innerHTML = fuel;
+    document.getElementById('balk').style.width = fuel+'%';
 };
 
 
@@ -87,3 +87,43 @@ var lineChart = new Chart(chart1, {
 
 
 // Chart 3: js circleChart
+
+
+
+//var chart2 = document.getElementById("circleChart");
+//
+//var circleChart = new Chart(chart2, {
+//    type: 'doughnut',
+//    data: {
+//        labels: ['Strength', 'Skill', 'Health', 'Speed', 'Luck'],
+//        datasets: [
+//            {
+//                label: 'Points',
+//                backgroundColor: ['#111111', '#222222', '#333333', '#444444'
+//                data: [10, 20, 55, 30, 10]
+//            }
+//        ]
+//    }
+//    options: options
+//});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
