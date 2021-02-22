@@ -7,6 +7,16 @@ body {
     color: white;
 }
 
+main {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-areas: 
+/*
+        "actie"
+        "over"; 
+*/
+}
+
 #snelheidsbalk {
     position: relative;
     background-color: white;
