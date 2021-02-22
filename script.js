@@ -21,7 +21,8 @@ document.getElementById('tank').onclick = function(){
 
 var chart1 = document.getElementById("lineChart");
 
-Chart.defaults.global.legend.labels.fontColor = "#fff";
+Chart.defaults.global.defaultFontColor = '#666';
+Chart.defaults.global.defaultFontFamily = 'D-DIN';
 
 var lineChart = new Chart(chart1, {
     type: 'line',
@@ -82,3 +83,7 @@ var lineChart = new Chart(chart1, {
     }
 
 });
+
+
+
+// Chart 3: js circleChart

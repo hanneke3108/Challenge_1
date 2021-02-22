@@ -17,21 +17,15 @@ main {
 */
 }
 
-/*
-.widthLineChart {
-    width: 400px;
-}
-*/
-
 #brandstofbalk {
     position: relative;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.2);
     margin: 30px;
     overflow: hidden;
 }
 
 #balk {
-    background-color: red;
+    background-color: rgba(63, 215, 215, 1);
     width: 300px;
     height: 20px;
 }
