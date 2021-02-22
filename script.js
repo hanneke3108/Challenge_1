@@ -27,7 +27,7 @@ Chart.defaults.global.defaultFontFamily = 'D-DIN';
 var lineChart = new Chart(chart1, {
     type: 'line',
     data: {
-        labels: ["March", "April", "May", "June", "July", "August", "September", "October"],
+        labels: ["March", "April", "May", "June", "July", "Aug", "Sept", "Oct"],
         datasets: [
             {
                 label: "Current speed",
@@ -47,7 +47,7 @@ var lineChart = new Chart(chart1, {
                 pointHoverBorderWidth: 2,
                 pointRadius: 1,
                 pointHitRadius: 10,
-                data: [1500, 2000, 2500, 2000, 3000, 3500, 3800, 3500],
+                data: [1500, 2000, 2500, 2000, 3000, 3500, 3800],
             }, 
             {
                 label: "Speed from previous flight",
@@ -68,7 +68,7 @@ var lineChart = new Chart(chart1, {
                 pointHoverBorderWidth: 2,
                 pointRadius: 1,
                 pointHitRadius: 10,
-                data: [1500, 1500, 1800, 2500, 2500, 3000, 2500, 3500],
+                data: [1500, 1500, 1800, 2500, 2500, 3000, 3500],
             }
         ]
     },
@@ -106,24 +106,3 @@ var lineChart = new Chart(chart1, {
 //    }
 //    options: options
 //});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

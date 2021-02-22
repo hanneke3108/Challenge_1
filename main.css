@@ -18,10 +18,7 @@ main {
         "one"
         "two"
         "three"; 
-}
-
-h1, span {
-    font-weight: bold;
+    overflow-x: hidden;
 }
 
 span {
@@ -93,12 +90,12 @@ h2 {
     width: 300px;
     height: 150px;
     position: relative;
-    color: white;
-    font-size: 20px;
+    color: #3FD7D7;
+    font-size: 30px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    box-sizing: border-box;
+/*    box-sizing: border-box;*/
     overflow: hidden;
     --percentage: 0;
 }
@@ -112,9 +109,29 @@ h2 {
     width: 300px;
     height: 300px;
     border: 50px solid;
-    border-color: #3FD7D7 #3FD7D7 #000 #000;
+    border-color: rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2) #3FD7D7 #3FD7D7;
     border-radius: 50%;
-    transform: rotate(-45deg)
+    transform: rotate(100deg);
+}
+
+.bg_three {
+    height: 250px;
+}
+
+.begin, .end {
+    font-size: 14px;
+}
+
+.begin {
+    color: #3FD7D7;
+    position: absolute;
+    left: 34px;
+}
+
+.end {
+    color: rgba(255, 255, 255, 0.2);
+    position: relative;
+    left: 250px;
 }
 
 /*
