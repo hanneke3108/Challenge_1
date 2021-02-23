@@ -45,7 +45,7 @@ h2 {
 #snelheidsbalk {
     position: relative;
     background-color: rgba(255, 255, 255, 0.2);
-    margin: 30px;
+    margin: 30px 10px 30px 10px;
     overflow: hidden;
 }
 
@@ -58,7 +58,7 @@ h2 {
 #gas {
     font-family: "D-DIN";
     float: right;
-    margin-right: 30px;
+    margin-right: 10px;
     color: rgba(63, 215, 215, 1);
     background-color: #4c4c4c;
     border: 2px solid rgba(63, 215, 215, 1);
@@ -79,6 +79,7 @@ h2 {
 }
 
 .bg_one, .bg_two, .bg_three {
+    min-width: 330px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 30px;
@@ -122,13 +123,14 @@ h2 {
 
 .begin {
     color: #3FD7D7;
-    position: absolute;
-    left: 34px;
+    position: relative;
+    left: 5px;
 }
 
 .end {
     color: rgba(255, 255, 255, 0.2);
     position: relative;
+    top: -25px;
     left: 250px;
 }
 
@@ -139,14 +141,14 @@ h2 {
 }
 */
 
-
+/*Volgorde paktie niet!!!!!!*/
 @media only screen and (min-width: 600px) and (max-width: 899px) {
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
-            "one two"
-            "three"; 
+            "one three"
+            "two"; 
     }
 }
 
@@ -155,8 +157,7 @@ h2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
-            "one two"
-            "three"; 
+            "one two three"; 
     }
 }
 
