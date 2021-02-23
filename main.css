@@ -30,6 +30,7 @@ h1 {
     padding-top: 20px;
     text-align: center;
     color: white;
+    font-weight: 200;
 }
 
 h2 {
@@ -62,10 +63,7 @@ h2 {
     color: rgba(63, 215, 215, 1);
     background-color: #4c4c4c;
     border: 2px solid rgba(63, 215, 215, 1);
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding: 8px 12px 8px 12px;
 }
 
 #gas:focus {
@@ -80,13 +78,11 @@ h2 {
 
 .bg_one, .bg_two, .bg_three {
     min-width: 330px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 20px 30px 20px;
     background-color: rgba(255, 255, 255, 0.3);
 }
 
+/*Source: https://www.youtube.com/watch?v=Cus9S2yxkzQ*/
 .doughnut {
     width: 300px;
     height: 150px;

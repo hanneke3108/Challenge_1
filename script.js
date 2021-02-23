@@ -18,7 +18,7 @@ document.getElementById('gas').onclick = function(){
 
 
 
-// Chart 2: js lineChart
+// Chart 2: js lineChart, source: https://www.youtube.com/watch?v=t8TgLqTzo5o
 
 var chart1 = document.getElementById("lineChart");
 
