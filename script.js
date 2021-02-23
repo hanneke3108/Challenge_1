@@ -68,26 +68,3 @@ var lineChart = new Chart(chart1, {
     }
 
 });
-
-
-
-// Chart 3: js circleChart
-
-
-
-//var chart2 = document.getElementById("circleChart");
-//
-//var circleChart = new Chart(chart2, {
-//    type: 'doughnut',
-//    data: {
-//        labels: ['Strength', 'Skill', 'Health', 'Speed', 'Luck'],
-//        datasets: [
-//            {
-//                label: 'Points',
-//                backgroundColor: ['#111111', '#222222', '#333333', '#444444'
-//                data: [10, 20, 55, 30, 10]
-//            }
-//        ]
-//    }
-//    options: options
-//});
