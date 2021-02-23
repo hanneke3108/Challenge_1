@@ -1,18 +1,19 @@
 // Chart 1: own barChart
 
-var fuel = 75;
+//BALKSCHAAL VERANDEREN!!!!!!!!!!!!!!
+var speed = 3800;
 
-document.getElementById('fuel').innerHTML = fuel;
-document.getElementById('balk').style.width = fuel+'%';
+document.getElementById('speed').innerHTML = speed;
+document.getElementById('balk').style.width = speed+'%';
 
-document.getElementById('tank').onclick = function(){
-    fuel += 3;
+document.getElementById('gas').onclick = function(){
+    speed += 10;
 
-    if(fuel > 100){
-        fuel = 100;
+    if(speed > 4000){
+        speed = 4000;
     }
-    document.getElementById('fuel').innerHTML = fuel;
-    document.getElementById('balk').style.width = fuel+'%';
+    document.getElementById('speed').innerHTML = speed;
+    document.getElementById('balk').style.width = speed+'%';
 };
 
 
@@ -30,7 +31,7 @@ var lineChart = new Chart(chart1, {
         labels: ["March", "April", "May", "June", "July", "Aug", "Sept", "Oct"],
         datasets: [
             {
-                label: "Current speed",
+                label: "During this flight",
                 fill: false,
                 lineTension: 0.3,
                 borderColor: "rgba(63, 215, 215, 1)",
@@ -42,7 +43,7 @@ var lineChart = new Chart(chart1, {
                 data: [1500, 2000, 2500, 2000, 3000, 3500, 3800],
             }, 
             {
-                label: "Speed from previous flight",
+                label: "Previous flight",
                 fill: true,
                 lineTension: 0.3,
                 backgroundColor: "rgba(255, 255, 255, 0.2)",

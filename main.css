@@ -42,7 +42,7 @@ h2 {
     height: 200px;
 }
 
-#brandstofbalk {
+#snelheidsbalk {
     position: relative;
     background-color: rgba(255, 255, 255, 0.2);
     margin: 30px;
@@ -51,11 +51,11 @@ h2 {
 
 #balk {
     background-color: rgba(63, 215, 215, 1);
-    width: 300px;
+    width: 200px;
     height: 20px;
 }
 
-#tank {
+#gas {
     font-family: "D-DIN";
     float: right;
     margin-right: 30px;
@@ -68,11 +68,11 @@ h2 {
     padding-right: 12px;
 }
 
-#tank:focus {
+#gas:focus {
     outline: none;
 }
 
-#tank:hover {
+#gas:hover {
     cursor: pointer;
     color: white;
     background-color: rgba(63, 215, 215, 1);
