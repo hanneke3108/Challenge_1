@@ -148,7 +148,7 @@ h2 {
     }
 }
 
-@media only screen and (min-width: 900px) and (max-width: 1199px) {
+@media only screen and (min-width: 900px) and (max-width: 1500px) {
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
