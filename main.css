@@ -1,7 +1,7 @@
 /*@FONT-FACE WERKT NIET!!!!!!*/
 @font-face {
     font-family: "D-DIN";
-    src: url(fonts/d-din-webfont.woff);
+    src: url(fonts/d-din-webfont.woff) format('woff');
 }
 
 body {
