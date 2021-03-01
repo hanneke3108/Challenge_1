@@ -1,11 +1,8 @@
-/*@FONT-FACE WERKT NIET!!!!!!*/
-@font-face {
-    font-family: "D-DIN";
-    src: url(fonts/d-din-webfont.woff) format('woff');
-}
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 
 body {
-    font-family: "D-DIN";
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
     background-color: black;
     color: black;
 }
@@ -61,7 +58,7 @@ h2 {
 }
 
 #gas {
-    font-family: "D-DIN";
+    font-family: 'Rubik', sans-serif;
     float: right;
     margin-right: 10px;
     color: rgba(63, 215, 215, 1);
