@@ -9,10 +9,10 @@ document.getElementById('speed').innerHTML = speed;
 document.getElementById('balk').style.width = percentage+'%';
 
 document.getElementById('gas').onclick = function(){
-    speed += 10;
-
-    if(speed > 4000){
-        speed = 4000;
+    speed += 50;
+    percentage = speed/speedMax * 100;
+    if(speed > 4500){
+        speed = 4500;
     }
     document.getElementById('speed').innerHTML = speed;
     document.getElementById('balk').style.width = percentage+'%';
