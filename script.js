@@ -2,9 +2,11 @@
 
 //BALKSCHAAL VERANDEREN!!!!!!!!!!!!!!
 var speed = 3800;
+var speedMax = 4500;
+var percentage = speed/speedMax * 100;
 
 document.getElementById('speed').innerHTML = speed;
-document.getElementById('balk').style.width = speed+'%';
+document.getElementById('balk').style.width = percentage+'%';
 
 document.getElementById('gas').onclick = function(){
     speed += 10;
@@ -13,7 +15,7 @@ document.getElementById('gas').onclick = function(){
         speed = 4000;
     }
     document.getElementById('speed').innerHTML = speed;
-    document.getElementById('balk').style.width = speed+'%';
+    document.getElementById('balk').style.width = percentage+'%';
 };
 
 
