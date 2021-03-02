@@ -1,6 +1,4 @@
 // Chart 1: own barChart
-
-//BALKSCHAAL VERANDEREN!!!!!!!!!!!!!!
 var speed = 3800;
 var speedMax = 4500;
 var percentage = speed/speedMax * 100;
@@ -19,9 +17,7 @@ document.getElementById('gas').onclick = function(){
 };
 
 
-
 // Chart 2: js lineChart, source: https://www.youtube.com/watch?v=t8TgLqTzo5o
-
 var chart1 = document.getElementById("lineChart");
 
 Chart.defaults.global.defaultFontColor = 'black';
