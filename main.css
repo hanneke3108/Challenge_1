@@ -5,6 +5,8 @@ body {
     font-weight: 300;
     background-color: black;
     color: black;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 header {
@@ -18,8 +20,25 @@ main {
     grid-template-areas: 
         "one"
         "two"
-        "three"; 
+        "three"
+        "four"; 
     overflow-x: hidden;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
 }
 
 span {
@@ -80,9 +99,9 @@ h2 {
     background-color: rgba(63, 215, 215, 1);
 }
 
-.bg_one, .bg_two, .bg_three {
+.bg_one, .bg_two, .bg_three, .bg_four {
     min-width: 330px;
-    padding: 30px 20px 30px 20px;
+    padding: 20px 30px 20px 30px;
     background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -113,11 +132,6 @@ h2 {
     transform: rotate(100deg);
 }
 
-/*IETS OP VERZINNEN*/
-.bg_three {
-    height: 250px;
-}
-
 .begin, .end {
     font-size: 14px;
 }
@@ -136,22 +150,24 @@ h2 {
 }
 
 /*Volgorde paktie niet!!!!!! EN BREEDTES AANPASSEN*/
-@media only screen and (min-width: 600px) and (max-width: 899px) {
+@media only screen and (min-width: 600px) and (max-width: 999px) {
     main {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: auto;
         grid-template-areas: 
             "one three"
-            "two"; 
+            "two four"; 
     }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1000px) and (max-width: 1500px){
     main {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 1fr 1fr;
         grid-template-areas: 
-            "one two three"; 
+            "one two three"
+            "four"; 
     }
 }
 

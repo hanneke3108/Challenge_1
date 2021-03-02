@@ -22,6 +22,7 @@ var chart1 = document.getElementById("lineChart");
 
 Chart.defaults.global.defaultFontColor = 'black';
 Chart.defaults.global.defaultFontFamily = 'D-DIN';
+Chart.defaults.global.legend.reverse = true;
 
 var lineChart = new Chart(chart1, {
     type: 'line',
@@ -64,5 +65,49 @@ var lineChart = new Chart(chart1, {
             }]
         }
     }
+});
 
+
+//Chart 4: js barChart, source: https://www.youtube.com/watch?v=B5rCrmXK5Y0
+var chart2 = document.getElementById("barChart");
+
+Chart.defaults.global.legend.reverse = false;
+
+var barChart = new Chart(chart2, {
+    type: 'horizontalBar',
+    data: {
+        labels: ["Oxygen", "Hydrogen"],
+        datasets: [
+            {
+                label: "Current",
+                fill: false,
+                lineTension: 0.3,
+                borderColor: "rgba(63, 215, 215, 1)",
+                backgroundColor: "rgba(63, 215, 215, 1)",
+                data: [10, 15],
+            },
+            {
+                label: "Need",
+                fill: false,
+                lineTension: 0.3,
+                borderColor: "rgba(255, 255, 255, 1)",
+                backgroundColor: "rgba(255, 255, 255, 1)",
+                data: [7, 2],
+            }
+            
+        ]
+    },
+    options: {
+        scales: {
+            xAxes: [{
+                stacked: false,
+            }],
+            yAxes: [{
+                stacked: false,
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
 });
