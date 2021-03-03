@@ -27,24 +27,24 @@ main {
     grid-template-areas: 
         "one"
         "two"
-        "three"
-        "four"; 
+        "four"
+        "three"; 
     overflow-x: hidden;
 }
 
-.one {
+.bg_one {
     grid-area: one;
 }
 
-.two {
+.bg_two {
     grid-area: two;
 }
 
-.three {
+.bg_three {
     grid-area: three;
 }
 
-.four {
+.bg_four {
     grid-area: four;
 }
 
@@ -150,43 +150,51 @@ h2 {
 }
 
 .end {
+    width: 80px;
     color: rgba(255, 255, 255, 0.2);
     position: relative;
     top: -25px;
     left: 250px;
 }
 
-/*!!!PAKT VOLGORDE NIET, BREEDTES AANPASSEN?*/
+.space {
+    height: 40px;
+}
+
 @media only screen and (min-width: 600px) and (max-width: 999px) {
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
         grid-template-areas: 
-            "one three"
-            "two four"; 
+            "one four"
+            "two three"; 
         overflow: visible;
     }
 }
 
-@media only screen and (min-width: 1000px) and (max-width: 1500px){
+@media only screen and (min-width: 1000px) and (max-width: 1350px){
     main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
-            "one two three"
-            "four four four"; 
+            "one four three"
+            "two two two"; 
         overflow: visible;
     }
 }
 
-@media only screen and (min-width: 1500px){
+@media only screen and (min-width: 1351px){
     main {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 40% 1fr 1fr;
         grid-template-areas: 
-            "one two three four"; 
+            "one four three"
+            "two two ."; 
         overflow: visible;
+    }
+    .bg_two {
+        margin-bottom: 50px;
     }
 }
 

@@ -69,7 +69,6 @@ var lineChart = new Chart(chart1, {
 
 
 //Chart 4: js barChart, source: https://www.youtube.com/watch?v=B5rCrmXK5Y0
-//!!!TWEEDE WITTE BALK VALT WEG
 var chart2 = document.getElementById("barChart");
 
 Chart.defaults.global.legend.reverse = false;
