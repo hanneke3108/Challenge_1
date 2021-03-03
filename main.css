@@ -90,7 +90,7 @@ h2 {
     float: right;
     margin-right: 10px;
     color: rgba(63, 215, 215, 1);
-    background-color: #4c4c4c;
+    background-color: transparent;
     border: 2px solid rgba(63, 215, 215, 1);
     padding: 15px 12px 15px 12px;
     text-transform: uppercase;
@@ -160,21 +160,33 @@ h2 {
 @media only screen and (min-width: 600px) and (max-width: 999px) {
     main {
         display: grid;
-        grid-template-columns: 2fr 2fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
         grid-template-areas: 
             "one three"
             "two four"; 
+        overflow: visible;
     }
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1500px){
     main {
         display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
             "one two three"
-            "four"; 
+            "four four four"; 
+        overflow: visible;
+    }
+}
+
+@media only screen and (min-width: 1500px){
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "one two three four"; 
+        overflow: visible;
     }
 }
 
