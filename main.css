@@ -13,6 +13,13 @@ header {
     height: 100px;
 }
 
+.logo {
+    width: 250px;
+    position: relative;
+    top: 15px;
+    left: -45px;
+}
+
 main {
     display: grid;
     grid-gap: 15px;
@@ -149,7 +156,7 @@ h2 {
     left: 250px;
 }
 
-/*Volgorde paktie niet!!!!!! EN BREEDTES AANPASSEN*/
+/*!!!PAKT VOLGORDE NIET, BREEDTES AANPASSEN?*/
 @media only screen and (min-width: 600px) and (max-width: 999px) {
     main {
         display: grid;
